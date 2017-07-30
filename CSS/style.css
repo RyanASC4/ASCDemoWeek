@@ -1,3 +1,7 @@
+.navbar
+{
+    background:;
+}
 /*Navbar logo div*/
 .navbar-brand
 {
@@ -28,23 +32,6 @@ body
 }
 
 /*Header splash image*/
-/*
-#jumboHeader
-{
-    background-image: url("/Assets/HeaderImage1s.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    letter-spacing: 8px;
-    cursor: default;
-    padding-top: 250px;
-    padding-bottom: 400px;
-    height: 800px;
-    overflow: hidden;
-    border: 2px dashed green;
-}
-*/
 
 #jumboHeader
 {
@@ -77,13 +64,19 @@ body
 
 .headerText
 {
-    padding-top: 180px;
-    padding-bottom: 400px;
+    height: 100%;
+    padding-top: 230px;
+    padding-bottom: 250px;
 }
 
 .headerText h1
 {
     position: relative;
+    max-width: 300px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 40px;
+    /*border: 1px solid;*/
 }
 
 /*Second header with informative text*/
@@ -365,8 +358,12 @@ body
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
-
-canvas {
-  display: block;
-  vertical-align: bottom;
+/*Changes font size and spacing for browser resize*/
+@media (max-width: 780px)
+{
+    .headerText h1
+    {
+        font-size: 75px;
+        line-height: 100px;
+    }
 }
