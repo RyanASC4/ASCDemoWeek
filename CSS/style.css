@@ -28,6 +28,7 @@ body
 }
 
 /*Header splash image*/
+/*
 #jumboHeader
 {
     background-image: url("/Assets/HeaderImage1s.png");
@@ -35,17 +36,54 @@ body
     background-position: center;
     background-size: cover;
     text-align: center;
+    letter-spacing: 8px;
+    cursor: default;
     padding-top: 250px;
     padding-bottom: 400px;
-    /*min-height: 300px;*/
     height: 800px;
     overflow: hidden;
-    /*border: 2px dashed red;*/
+    border: 2px dashed green;
+}
+*/
+
+#jumboHeader
+{
+    text-align: center;
+    letter-spacing: 8px;
+    cursor: default;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 800px;
+    overflow: hidden;
 }
 
 #jumboHeader h1
 {
     color: #51C1E9;
+    background: transparent;
+}
+
+#particles-js
+{
+    position: absolute;
+    background-image: url("/Assets/HeaderImage1s.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 800px;
+    width: 100%;
+}
+
+.headerText
+{
+    padding-top: 180px;
+    padding-bottom: 400px;
+}
+
+.headerText h1
+{
+    position: relative;
 }
 
 /*Second header with informative text*/
@@ -53,7 +91,7 @@ body
 {
     background: #3B3D42;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 30px;
     /*border: 1px solid red;*/
 }
@@ -62,22 +100,24 @@ body
 {
     color: #51C1E9;
     text-align: center;
+    cursor: default;
     font-size: 50px;
-    padding-bottom: 10px;
     letter-spacing: 5px;
-    
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 #jumboHeader2 h3
 {
-    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 #jumboHeader2 h4
 {
     padding-left: 120px;
     padding-right: 120px;
-    line-height: 30px;
+    margin-bottom: 25px;
+    line-height: 35px;
 }
 
 /*Short divider bar*/
@@ -112,11 +152,6 @@ body
     padding-right: 45px;
 }
 
-.row
-{
-    
-}
-
 /*Columns*/
 .col-md-4
 {
@@ -130,6 +165,7 @@ body
     color: rgba(226, 224, 224, 0.9);
     padding-right: 0;
     padding-left: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
     border-radius: 15px;
@@ -269,13 +305,14 @@ body
 {
     font-size: 40px;
     letter-spacing: 5px;
+    cursor: default;
     margin-top: 35px;
     margin-bottom: 25px;
 }
 
 #jumboFooter h4
 {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 #contactLink
@@ -327,4 +364,9 @@ body
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
