@@ -67,18 +67,8 @@
         
         <!--Header-->
         <div class="jumbotron" id="jumboHeader">
-            <div id="particles-js">
-<!--
-                <div class="trans">
-                    <h1>ASC</h1>
-                    <h1>DEMO</h1>
-                    <h1>WEEK</h1>
-                    <div class="container">
-                        <h2>A place to showcase past and present ASC Demo week projects</h2>
-                    </div>
-                </div>
--->
-            </div>
+            <div id="particles-js"></div>
+            
             <div class="headerText">
                 <h1>ASC</h1>
                 <h1>DEMO</h1>
@@ -139,6 +129,24 @@
                         </div>
                     </div>
                 </a>
+                <a href="#" style="text-decoration: none">
+                    <div class="col-md-4" id="ASCFuture">
+                         <div class ="yearZoomFuture">
+                            <div class="tint" id="tintFuture">
+                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <div class="col-md-4" id="ASCFuture">
+                         <div class ="yearZoomFuture">
+                            <div class="tint" id="tintFuture">
+                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="jumbotron" id="jumboFooter">
@@ -170,6 +178,9 @@
             </p>
         </div>
         <script>
+            var scrollStart = 150;
+            var scrollEnd = 700;
+            
             //Reduces the opacity of the text in the header div in accordance to amount scrolled
             $(window).scroll(
                 function()
@@ -177,11 +188,25 @@
                     $(".headerText").css("opacity", 1 - $(window).scrollTop() / 350);
                 }
             );
+            
+            
+            //Etra parameters so the second effect only starts after you've scrolled a certain point
+            if($(window).scrollTop() < scrollEnd)
+            {
+                $(window).scroll(
+                    function()
+                    {
+                    $("#jumboHeader2").css("opacity", 0 + ($(window).scrollTop()-scrollStart) / 400);
+                    }
+                );
+            }
+            
         </script>
         
          <!--Particles! Ooo, Ahhh-->
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         
+        <!--Options for how the eparticles behave-->
         <script src="js/app.js"></script>
                 
     </body>
