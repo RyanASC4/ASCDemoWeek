@@ -10,7 +10,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <!--Custom CSS-->
-        <link rel="stylesheet" href="CSS/indexStyle.css">
+        <link rel="stylesheet" href="CSS/cohortStyle.css">
         
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -68,82 +68,68 @@
         <!--Header-->
         <div class="jumbotron" id="jumboHeader">
             <div id="particles-js"></div>
-            
-            <div class="headerText">
-                <h1>ASC</h1>
-                <h1>DEMO</h1>
-                <h1>WEEK</h1>
-            </div>
         </div>
         
         <!--Header 2-->
         <div class="jumbotron" id="jumboHeader2">
             <h1>
-                ASC DEMO SITE
+                COHORTS
             </h1>
-            <h3>
-                A place to showcase past and present ASC Demo week projects
-            </h3>
-            <div class="bar"></div>
-            <h4>
-                During the last week of our six-week summer intensive, student are put into groups to create and demonstrate a product of their choosing using the languages and skills they learned over the course of the intensive. These are some of the amazing demos presented by ASC Alumni.
-            </h4>
             <div class="barShort"></div>
         </div>
         <div class="container-fluid">
             <!--Bootsrap rows and columns for dynamicly resizing year sections, with nested div to tint the sections in accordance to the ASC Branding Guide-->
             <div class="row">
                 <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASC2016">
-                        <div class ="yearZoom2016">
-                            <div class="tint" id="tint2016">
-                            2016 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="cisco">
+                            CISCO<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                         </div>
                     </div>
                 </a>
                 <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASC2017">
-                         <div class ="yearZoom2017">
-                            <div class="tint" id="tint2017">
-                            2017 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="mlb">
+                            MLBAM<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                         </div>
                     </div>
                 </a>
                 <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASC2018">
-                         <div class ="yearZoom2018">
-                            <div class="tint" id="tint2018">
-                            2018 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="fb">
+                            FACEBOOK<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" style="text-decoration: none">
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="yh">
+                            YAHOO!<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                         </div>
                     </div>
                 </a>
                 <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASCFuture">
-                         <div class ="yearZoomFuture">
-                            <div class="tint" id="tintFuture">
-                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="gs">
+                            GOLDMAN SACHS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                         </div>
                     </div>
                 </a>
                 <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASCFuture">
-                         <div class ="yearZoomFuture">
-                            <div class="tint" id="tintFuture">
-                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="cu">
+                            CHATHAM UNIVERSITY<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                         </div>
                     </div>
                 </a>
+            </div>
+            <div class="row">
                 <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASCFuture">
-                         <div class ="yearZoomFuture">
-                            <div class="tint" id="tintFuture">
-                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
+                    <div class="col-md-4">
+                        <div class ="cohortZoom" id="bond">
+                            BOND COLLECTIVE<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                         </div>
                     </div>
                 </a>
@@ -178,28 +164,21 @@
             </p>
         </div>
         <script>
-            var scrollStart = 150;
-            var scrollEnd = 700;
             
-            //Reduces the opacity of the text in the header div in accordance to amount scrolled
+            //Extra parameters so the second effect only starts after you've scrolled a certain point
             $(window).scroll(
                 function()
                 {
-                    $(".headerText").css("opacity", 1 - $(window).scrollTop() / 350);
+                $("h1").css("opacity", 1 - $(window).scrollTop() / 400);
                 }
             );
             
-            
-            //Etra parameters so the second effect only starts after you've scrolled a certain point
-            if($(window).scrollTop() < scrollEnd)
-            {
-                $(window).scroll(
-                    function()
-                    {
-                    $("#jumboHeader2").css("opacity", 0 + ($(window).scrollTop()-scrollStart) / 400);
-                    }
-                );
-            }
+            $(window).scroll(
+                function()
+                {
+                $(".barShort").css("opacity", 1 - $(window).scrollTop() / 400);
+                }
+            );
             
         </script>
         
