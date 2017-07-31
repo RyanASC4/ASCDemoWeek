@@ -55,7 +55,7 @@ body
 #particles-js
 {
     position: absolute;
-    background-image: url("/Assets/HeaderImage1s.png");
+    background-image: url("/assets/HeaderImage1s.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -220,37 +220,37 @@ body
 /*Column background images*/
 #cisco
 {
-    background-image: url("/Assets/cohorts/cisco.jpg");
+    background-image: url("/assets/cohorts/cisco.jpg");
 }
 
 #mlb
 {
-    background-image: url("/Assets/cohorts/mlbam.jpg");
+    background-image: url("/assets/cohorts/mlbam.jpg");
 }
 
 #fb
 {
-    background-image: url("/Assets/cohorts/fb.jpg");
+    background-image: url("/assets/cohorts/fb.jpg");
 }
 
 #yh
 {
-    background-image: url("/Assets/cohorts/yh.jpg");
+    background-image: url("/assets/cohorts/yh.jpg");
 }
 
 #gs
 {
-    background-image: url("/Assets/cohorts/gs.jpg");
+    background-image: url("/assets/cohorts/gs.jpg");
 }
 
 #cu
 {
-    background-image: url("/Assets/cohorts/cu.jpg");
+    background-image: url("/assets/cohorts/cu.jpg");
 }
 
 #bond
 {
-    background-image: url("/Assets/cohorts/bond.jpg");
+    background-image: url("/assets/cohorts/bond.jpg");
 }
 
 /*Bottom contact info and social section*/

@@ -56,7 +56,7 @@ body
 #particles-js
 {
     position: absolute;
-    background-image: url("/Assets/HeaderImage1s.png");
+    background-image: url("/assets/HeaderImage1s.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -208,22 +208,22 @@ body
 /*Column background images*/
 .yearZoom2016
 {
-    background-image: url("/Assets/ASCImage1.jpg");
+    background-image: url("/assets/ASCImage1.jpg");
 }
 
 .yearZoom2017
 {
-    background-image: url("/Assets/ASCImage2.jpg");
+    background-image: url("/assets/ASCImage2.jpg");
 }
 
 .yearZoom2018
 {
-    background-image: url("/Assets/ASCImage3.jpg");
+    background-image: url("/assets/ASCImage3.jpg");
 }
 
 .yearZoomFuture
 {
-    background-image: url("/Assets/AsteriskTrans.png");
+    background-image: url("/assets/AsteriskTrans.png");
 }
 
 /*When hovered over, image zooms slightly*/
