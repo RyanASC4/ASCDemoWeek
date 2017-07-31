@@ -37,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    
+
                     <a class="navbar-brand navbar-left" href="#">
                         <img id="logo" src="Assets/ASClogo.png">
                     </a>
@@ -47,13 +47,16 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
+                            <a href="index.html">Years</a>
+                        </li>
+                        <li>
+                            <a href="cohort.html">Cohorts</a>
+                        </li>
+                        <li>
                             <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
+                            <a href="#jumboFooter">Contact</a>
                         </li>
                         <li>
                             <a href="http://www.allstarcode.org/">Main Site</a>
@@ -65,90 +68,95 @@
             <!-- /.container -->
         </nav>
         
-        <!--Header-->
-        <div class="jumbotron" id="jumboHeader">
-            <div id="particles-js"></div>
-            
-            <div class="headerText">
-                <h1>ASC</h1>
-                <h1>DEMO</h1>
-                <h1>WEEK</h1>
+        <div class="bodyContainer">
+            <!--Header-->
+            <div class="jumbotron" id="jumboHeader">
+                <div id="particles-js"></div>
+
+                <div class="headerText">
+                    <h1>ASC</h1>
+                    <h1>DEMO</h1>
+                    <h1>WEEK</h1>
+                </div>
+            </div>
+
+            <!--Header 2-->
+            <div class="jumbotron" id="jumboHeader2">
+                <h1>
+                    ASC DEMO SITE
+                </h1>
+                <h3>
+                    A place to showcase past and present ASC Demo week projects
+                </h3>
+                <div class="bar"></div>
+                <h4>
+                    During the last week of our six-week summer intensive, student are put into groups to create and demonstrate a product of their choosing using the languages and skills they learned over the course of the intensive. These are some of the amazing demos presented by ASC Alumni.
+                </h4>
+                <div class="barShort"></div>
+            </div>
+            <div class="container-fluid">
+                <!--Bootsrap rows and columns for dynamicly resizing year sections, with nested div to tint the sections in accordance to the ASC Branding Guide-->
+                <div class="row">
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4" id="ASC2016">
+                            <div class ="yearZoom2016">
+                                <div class="tint" id="tint2016">
+                                2016 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="cohort.html" style="text-decoration: none">
+                        <div class="col-md-4" id="ASC2017">
+                             <div class ="yearZoom2017">
+                                <div class="tint" id="tint2017">
+                                2017 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4" id="ASC2018">
+                             <div class ="yearZoom2018">
+                                <div class="tint" id="tint2018">
+                                2018 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4" id="ASCFuture">
+                             <div class ="yearZoomFuture">
+                                <div class="tint" id="tintFuture">
+                                FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4" id="ASCFuture">
+                             <div class ="yearZoomFuture">
+                                <div class="tint" id="tintFuture">
+                                FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4" id="ASCFuture">
+                             <div class ="yearZoomFuture">
+                                <div class="tint" id="tintFuture">
+                                FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         
-        <!--Header 2-->
-        <div class="jumbotron" id="jumboHeader2">
-            <h1>
-                ASC DEMO SITE
-            </h1>
-            <h3>
-                A place to showcase past and present ASC Demo week projects
-            </h3>
-            <div class="bar"></div>
-            <h4>
-                During the last week of our six-week summer intensive, student are put into groups to create and demonstrate a product of their choosing using the languages and skills they learned over the course of the intensive. These are some of the amazing demos presented by ASC Alumni.
-            </h4>
-            <div class="barShort"></div>
-        </div>
-        <div class="container-fluid">
-            <!--Bootsrap rows and columns for dynamicly resizing year sections, with nested div to tint the sections in accordance to the ASC Branding Guide-->
-            <div class="row">
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASC2016">
-                        <div class ="yearZoom2016">
-                            <div class="tint" id="tint2016">
-                            2016 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASC2017">
-                         <div class ="yearZoom2017">
-                            <div class="tint" id="tint2017">
-                            2017 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASC2018">
-                         <div class ="yearZoom2018">
-                            <div class="tint" id="tint2018">
-                            2018 ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASCFuture">
-                         <div class ="yearZoomFuture">
-                            <div class="tint" id="tintFuture">
-                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASCFuture">
-                         <div class ="yearZoomFuture">
-                            <div class="tint" id="tintFuture">
-                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4" id="ASCFuture">
-                         <div class ="yearZoomFuture">
-                            <div class="tint" id="tintFuture">
-                            FUTURE ASC DEMO PRESENTATIONS<img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
         <div class="jumbotron" id="jumboFooter">
             <div class="barLong"></div>
             <h2>
@@ -161,22 +169,23 @@
             </h4>
             <p class="social" id="socialIcons">
                 <a href="http://facebook.com/allstarcode" style="text-decoration: none">
-                    <img src="assets/fb.png" id="fb">
+                    <img src="assets/fb.png" id="fbContact">
                 </a>
                 <a href="https://twitter.com/allstarcode" style="text-decoration: none">
-                    <img src="assets/twitter.png" id="tw">
+                    <img src="assets/twitter.png" id="twContact">
                 </a>
                 <a href="http://instagram.com/allstarcode" style="text-decoration: none">
-                    <img src="assets/ig.png" id="ig">
+                    <img src="assets/ig.png" id="igContact">
                 </a>
                 <a href="https://www.youtube.com/watch?v=AnDmxENBlOE" style="text-decoration: none">
-                    <img src="assets/yt.png" id="yt">
+                    <img src="assets/yt.png" id="ytContact">
                 </a>
                 <a href="https://www.linkedin.com/company/5046827?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A5046827%2Cidx%3A2-1-2%2CtarId%3A1464816284640%2Ctas%3Aall%20star%20code" style="text-decoration: none">
-                    <img src="assets/in.png" id="in">
+                    <img src="assets/in.png" id="inContact">
                 </a>
             </p>
-        </div>
+        </div>   
+        
         <script>
             var scrollStart = 150;
             var scrollEnd = 700;
@@ -188,7 +197,6 @@
                     $(".headerText").css("opacity", 1 - $(window).scrollTop() / 350);
                 }
             );
-            
             
             //Etra parameters so the second effect only starts after you've scrolled a certain point
             if($(window).scrollTop() < scrollEnd)
@@ -208,6 +216,10 @@
         
         <!--Options for how the eparticles behave-->
         <script src="js/app.js"></script>
+        
+        <!--Page Animation-->
+        <script></script>
+        
                 
     </body>
 </html>

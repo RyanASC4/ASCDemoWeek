@@ -1,4 +1,4 @@
-/*Added a gradient to the navbar, comment out to return it to black*/
+/*Added a transparent gradient to the navbar, comment out to return it to black*/
 .navbar
 {
     background: linear-gradient(rgba(59, 61, 66, 1), transparent);
@@ -41,7 +41,6 @@ body
 }
 
 /*Header splash image*/
-
 #jumboHeader
 {
     background: transparent;
@@ -70,10 +69,15 @@ body
 {
     background: #505259;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     /*border: 1px solid red;*/
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 #jumboHeader2 h1
@@ -83,12 +87,12 @@ body
     cursor: default;
     font-size: 50px;
     letter-spacing: 5px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
-#jumboHeader2 h4
+#jumboHeader2 h3
 {
     padding-left: 120px;
     padding-right: 120px;
@@ -101,8 +105,8 @@ body
 {
     background-color: #51C1E9;
     height: 3px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 40%;
@@ -153,12 +157,14 @@ body
 .cohortZoom
 {
     height: 100%;
+    filter: brightness(75%);
+    
     background-size: cover;
     background-position: center;
     color: rgba(226, 224, 224, 0.9);
     font-size: 35px;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 220px;
+    padding-bottom: 11px;
     border-radius: 15px;
     /*border: 2px solid blue;*/
     
@@ -173,6 +179,7 @@ body
 .cohortZoom:hover
 {
     color: rgba(255, 255, 255, 1);
+    filter: brightness(100%);
     
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -190,15 +197,19 @@ body
 /*Animates the ASC Asterisk when a column element is hovered over*/
 .cohortZoom img
 {
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    -moz-transition: -moz-transition .5s ease-in-out;
-    -ms-transition: -ms-transition .5s ease-in-out;
-    -o-transition: -o-transition .5s ease-in-out;
-    transition: transform .5s ease-in-out;
+    opacity: 0;
+    
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .cohortZoom:hover img
 {
+    opacity: 1;
+    
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -297,12 +308,7 @@ body
     transition: all 0.2s;
 }
 
-#socialIcons
-{
-    
-}
-
-#fb, #tw, #ig, #yt, #in
+#fbContact, #twContact, #igContact, #ytContact, #inContact
 {
     filter: grayscale(100%);
     border-radius: 25px;
@@ -317,7 +323,7 @@ body
     transition: all 0.2s;
 }
 
-#fb:hover, #tw:hover, #ig:hover, #yt:hover, #in:hover
+#fbContact:hover, #twContact:hover, #igContact:hover, #ytContact:hover, #inContact:hover
 {
     filter: none;
     -webkit-transform: scale(1.1);
@@ -341,10 +347,4 @@ body
         line-height: 100px;
     }
     
-    .cohortZoom
-    {
-        font-size: 30px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
 }
