@@ -403,6 +403,7 @@ body
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
+
 /*Changes font size and spacing for browser resize*/
 @media (max-width: 780px)
 {
