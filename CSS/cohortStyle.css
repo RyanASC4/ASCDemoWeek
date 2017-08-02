@@ -8,6 +8,7 @@
 /*Navbar logo div*/
 .navbar-brand
 {
+    width: 215px;
     text-align: center;
     padding: 8px;
 }
@@ -15,14 +16,20 @@
 /*Navbar logo image*/
 #logo
 {
-    width: 215px;
+    background-image: url("/assets/ASClogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    /*width: 215px;*/
     margin: auto;
 }
 
 /*Reduces space to the left of the navbar*/
 #navContainer
 {
-    margin-left: 10px;
+    background: transparent;
+    margin-left: 0px;
     /*margin-right: -100px;*/
 }
 
@@ -48,7 +55,7 @@ body
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
-    height: 200px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -60,7 +67,7 @@ body
     background-position: center;
     background-size: cover;
     text-align: center;
-    height: 200px;
+    height: 400px;
     width: 100%;
 }
 
@@ -118,8 +125,8 @@ body
 {
     background-color: #51C1E9;
     height: 3px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
@@ -341,10 +348,48 @@ body
 /*Changes font size and spacing for browser resize*/
 @media (max-width: 780px)
 {
-    .jumboHeader2 h1
+    #navContainer
     {
-        font-size: 75px;
-        line-height: 100px;
+        background: linear-gradient(rgba(59, 61, 66, 1), transparent);
     }
     
+    .navbar
+    {
+        background: transparent;
+        height: 70px;
+    }
+    
+    .navbar-toggle
+    {
+        margin-top: 10px;
+        height: 40px;
+        width: 45px;
+    }
+    
+    #logo
+    {
+        background-image: url("/assets/AsteriskTrans.png");
+        height: 140%;
+        width: 140%;
+    }
+    
+    .headerText h1
+    {
+        font-size: 100px;
+        line-height: 140px;
+    }
+    
+    #jumboHeader2
+    {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    #jumboHeader2 h1
+    {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 60px;
+        line-height: 10px;
+    }
 }

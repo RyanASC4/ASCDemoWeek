@@ -13,13 +13,12 @@
         <link rel="stylesheet" href="CSS/cohortStyle.css">
         
         <!--Fonts-->
-        
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        
+ 
         
         <!--Page Title-->
         <title>ASC Demo Showcase</title>
@@ -41,7 +40,7 @@
                     </button>
 
                     <a class="navbar-brand navbar-left" href="#">
-                        <img id="logo" src="assets/ASClogo.png">
+                        <img class="logoDiv" id="logo" src="assets/ASClogo.png">
                     </a>
                     <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
                 </div>
@@ -81,7 +80,7 @@
                 <h1>
                     COHORTS
                 </h1>
-                <div class="barShort"></div>
+                <div class="barLong"></div>
             </div>
             <div class="container-fluid">
                 <!--Bootsrap rows and columns for dynamicly resizing year sections, with nested div to tint the sections in accordance to the ASC Branding Guide-->
@@ -173,21 +172,24 @@
         </div>
         <script>
             
-            //Extra parameters so the second effect only starts after you've scrolled a certain point
-            $(window).scroll(
-                function()
-                {
-                $("h1").css("opacity", 1 - $(window).scrollTop() / 250);
-                }
-            );
-            
-            $(window).scroll(
-                function()
-                {
-                $(".barShort").css("opacity", 1 - $(window).scrollTop() / 250);
-                }
-            );
-            
+            //Only enables fade in animations on desktop
+            if ($(window).width() > 780)
+            {
+                //Extra parameters so the second effect only starts after you've scrolled a certain point
+                $(window).scroll(
+                    function()
+                    {
+                    $("h1").css("opacity", 1 - $(window).scrollTop() / 250);
+                    }
+                );
+
+                $(window).scroll(
+                    function()
+                    {
+                    $(".barShort").css("opacity", 1 - $(window).scrollTop() / 250);
+                    }
+                );
+            }
             
         </script>
         

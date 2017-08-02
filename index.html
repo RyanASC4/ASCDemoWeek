@@ -42,7 +42,7 @@
                     </button>
 
                     <a class="navbar-brand navbar-left" href="#">
-                        <img id="logo" src="assets/ASClogo.png">
+                        <div class="logoDiv" id="logo"></div>
                     </a>
                     <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
                 </div>
@@ -90,7 +90,7 @@
                     ASC DEMO SITE
                 </h1>
                 <h3>
-                    A place to showcase past and present ASC Demo week projects
+                    A place to showcase past and present All Star Code Demo week projects
                 </h3>
                 <div class="bar"></div>
                 <h4>
@@ -194,23 +194,26 @@
             var scrollStart = 150;
             var scrollEnd = 700;
             
-            //Reduces the opacity of the text in the header div in accordance to amount scrolled
-            $(window).scroll(
-                function()
-                {
-                    $(".headerText").css("opacity", 1 - $(window).scrollTop() / 350);
-                }
-            );
-            
-            //Etra parameters so the second effect only starts after you've scrolled a certain point
-            if($(window).scrollTop() < scrollEnd)
+            if ($(window).width() > 780)
             {
+                //Reduces the opacity of the text in the header div in accordance to amount scrolled
                 $(window).scroll(
                     function()
                     {
-                    $("#jumboHeader2").css("opacity", 0 + ($(window).scrollTop()-scrollStart) / 400);
+                        $(".headerText").css("opacity", 1 - $(window).scrollTop() / 350);
                     }
                 );
+
+                //Etra parameters so the second effect only starts after you've scrolled a certain point
+                if($(window).scrollTop() < scrollEnd)
+                {
+                    $(window).scroll(
+                        function()
+                        {
+                        $("#jumboHeader2").css("opacity", 0 + ($(window).scrollTop()-scrollStart) / 400);
+                        }
+                    );
+                }
             }
             
         </script>
