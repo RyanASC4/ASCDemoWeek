@@ -366,6 +366,24 @@ body
         width: 45px;
     }
     
+    /*keeps button transparent on click*/
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
+    {
+        background: transparent;
+    }
+    
+    /*drop down menu items*/
+    .navbar-nav
+    {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    element.style
+    {
+        padding: 12px;
+    }
+    
     #logo
     {
         background-image: url("/assets/AsteriskTrans.png");
@@ -391,5 +409,10 @@ body
         padding-bottom: 20px;
         font-size: 60px;
         line-height: 10px;
+    }
+    
+    .cohortZoom
+    {
+        filter: brightness(100%);
     }
 }

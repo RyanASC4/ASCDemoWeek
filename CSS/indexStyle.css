@@ -417,12 +417,32 @@ body
         height: 70px;
     }
     
+    /*Toggle button*/
     .navbar-toggle
     {
         margin-top: 10px;
         height: 40px;
         width: 45px;
     }
+    
+    /*keeps button transparent on click*/
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
+    {
+        background: transparent;
+    }
+    
+    /*drop down menu items*/
+    .navbar-nav
+    {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    element.style
+    {
+        padding: 12px;
+    }
+
     
     #logo
     {
@@ -456,6 +476,7 @@ body
     #jumboHeader2 h4
     {
         font-size: 28px;
+        line-height: 28px;
         padding-left: 10px;
         padding-right: 10px;
     }
