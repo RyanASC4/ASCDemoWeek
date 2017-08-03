@@ -122,6 +122,7 @@ body
     margin-top: 10px;
     margin-bottom: 30px;
     
+    /*Prevents user from higlighting text*/
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -302,15 +303,19 @@ body
 /*Animates the ASC Asterisk when a column element is hovered over*/
 .tint img
 {
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    -moz-transition: -moz-transition .5s ease-in-out;
-    -ms-transition: -ms-transition .5s ease-in-out;
-    -o-transition: -o-transition .5s ease-in-out;
-    transition: transform .5s ease-in-out;
+    opacity: 0;
+    
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .tint:hover img
 {
+    opacity: 1;
+    
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -366,11 +371,11 @@ body
 {
     color: #EBAB24;
     
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #fbContact, #twContact, #igContact, #ytContact, #inContact
@@ -381,11 +386,12 @@ body
     margin-right: 5px;
     /*border: 1px solid red;*/
     
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+ 
 }
 
 #fbContact:hover, #twContact:hover, #igContact:hover, #ytContact:hover, #inContact:hover
@@ -397,11 +403,12 @@ body
     -o-transform: scale(1.1);
     transform: scale(1.1);
     
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
 }
 
 /*Changes font size and spacing for browser resize*/
@@ -409,13 +416,13 @@ body
 {
     #navContainer
     {
-        background: linear-gradient(rgba(59, 61, 66, 1), transparent);
+        background: rgba(59, 61, 66, 1);
     }
     
     .navbar
     {
         background: transparent;
-        height: 70px;
+        height: 50px;
     }
     
     /*Toggle button*/
@@ -432,6 +439,11 @@ body
         background: transparent;
     }
     
+    .navbar-collapse
+    {
+        border: none;
+    }
+    
     /*drop down menu items*/
     .navbar-nav
     {
@@ -443,49 +455,102 @@ body
     {
         padding: 12px;
     }
-
+    
+    .barShort, .barLong
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     
     #logo
     {
         background-image: url("/assets/AsteriskTrans.png");
-        height: 140%;
-        width: 140%;
+        height: 120%;
+        width: 120%;
+    }
+    
+    #jumboHeader
+    {
+        background: transparent;
+        height: 430px;
+        overflow: hidden;
+    }
+    
+    #particles-js
+    {
+        height: 440px;
+    }
+    
+    .headerText
+    {
+        padding-top: 80px;
+        padding-bottom: 10px;
     }
     
     .headerText h1
     {
-        font-size: 100px;
-        line-height: 140px;
+        font-size: 70px;
+        line-height: 100px;
+    }
+    
+    #jumboHeader2
+    {
+        margin-top: 0;
+        padding-bottom: 10px;
     }
     
     #jumboHeader2 h1
     {
-        font-size: 60px;
+        font-size: 40px;
         padding-left: 10px;
         padding-right: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
     
     #jumboHeader2 h3
     {
-        font-size: 30px;
+        font-size: 22px;
         padding-left: 10px;
         padding-right: 10px;
         margin-top: 0;
+        margin-bottom: 0;
     }
     
     #jumboHeader2 h4
     {
-        font-size: 28px;
+        font-size: 18px;
         line-height: 28px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
     .tint
     {
-        font-size: 42px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        font-size: 24px;
+        padding-top: 75px;
+        padding-bottom: 70px;
     }
-}
+    
+    .tint img
+    {
+        opacity: 1;
+    }
+    
+    #jumboFooter h2
+    {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    #jumboFooter h4
+    {
+        margin-bottom: 30px;
+    }
+    
+    #fbContact, #twContact, #igContact, #ytContact, #inContact
+    {
+        filter: grayscale(0%);
+
+    }

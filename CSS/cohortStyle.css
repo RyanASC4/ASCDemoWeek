@@ -350,15 +350,16 @@ body
 {
     #navContainer
     {
-        background: linear-gradient(rgba(59, 61, 66, 1), transparent);
+        background: rgba(59, 61, 66, 1);
     }
     
     .navbar
     {
         background: transparent;
-        height: 70px;
+        height: 50px;
     }
     
+    /*Toggle button*/
     .navbar-toggle
     {
         margin-top: 10px;
@@ -370,6 +371,11 @@ body
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
     {
         background: transparent;
+    }
+    
+    .navbar-collapse
+    {
+        border: none;
     }
     
     /*drop down menu items*/
@@ -391,6 +397,18 @@ body
         width: 140%;
     }
     
+    #jumboHeader
+    {
+        background: transparent;
+        height: 150px;
+        overflow: hidden;
+    }
+    
+    #particles-js
+    {
+        height: 150px;
+    }
+    
     .headerText h1
     {
         font-size: 100px;
@@ -407,12 +425,23 @@ body
     {
         padding-top: 50px;
         padding-bottom: 20px;
-        font-size: 60px;
+        font-size: 50px;
         line-height: 10px;
     }
     
     .cohortZoom
     {
         filter: brightness(100%);
+    }
+    
+    #jumboFooter h2
+    {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    #jumboFooter h4
+    {
+        margin-bottom: 30px;
     }
 }
