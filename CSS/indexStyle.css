@@ -529,6 +529,7 @@ body
     .tint
     {
         font-size: 24px;
+        color: white;
         padding-top: 75px;
         padding-bottom: 70px;
     }
