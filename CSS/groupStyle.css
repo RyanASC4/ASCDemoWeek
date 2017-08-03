@@ -140,6 +140,12 @@ body
     margin-bottom: 20px;
 }
 
+.row
+{
+    overflow: hidden;
+    border-radius: 40px;
+}
+
 /*Columns*/
 .col-md-4
 {
@@ -151,28 +157,29 @@ body
     font-size: 23px;
     text-align: center;
     color: rgba(226, 224, 224, 0.9);
-    padding-right: 10;
-    padding-left: 10;
+    padding-right: 25;
+    padding-left: 25;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
-    border-radius: 20px;
-    /*border: 1px solid red;*/
+}
+
+#previewLabel
+{
+    font-weight: 100;
 }
 
 /*Common styling for all the column sections*/
-.cohortZoom
+.zoom
 {
-    height: 100%;
+    height: 85%;
     filter: brightness(75%);
     
     background-size: cover;
     background-position: center;
     color: rgba(226, 224, 224, 0.9);
     font-size: 35px;
-    padding-top: 220px;
-    padding-bottom: 11px;
-    border-radius: 15px;
+    overflow: hidden;
     /*border: 2px solid blue;*/
     
     -webkit-transition: all 0.3s;
@@ -183,10 +190,11 @@ body
 }
 
 /*When hovered over, image zooms slightly*/
-.cohortZoom:hover
+.zoom:hover
 {
     color: rgba(255, 255, 255, 1);
     filter: brightness(100%);
+    overflow: hidden;
     
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -201,63 +209,17 @@ body
     transition: all 0.3s;
 }
 
-/*Animates the ASC Asterisk when a column element is hovered over*/
-.cohortZoom img
+.restrict
 {
-    opacity: 0;
     
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
 }
 
-.cohortZoom:hover img
+.preview
 {
-    opacity: 1;
-    
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);    
-}
-
-/*Column background images*/
-#cisco
-{
-    background-image: url("/assets/cohorts/cisco.jpg");
-}
-
-#mlb
-{
-    background-image: url("/assets/cohorts/mlbam.jpg");
-}
-
-#fb
-{
-    background-image: url("/assets/cohorts/fb.jpg");
-}
-
-#yh
-{
-    background-image: url("/assets/cohorts/yh.jpg");
-}
-
-#gs
-{
-    background-image: url("/assets/cohorts/gs.jpg");
-}
-
-#cu
-{
-    background-image: url("/assets/cohorts/cu.jpg");
-}
-
-#bond
-{
-    background-image: url("/assets/cohorts/bond.jpg");
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 /*Bottom contact info and social section*/
@@ -274,7 +236,7 @@ body
 
 #jumboFooter h2
 {
-    font-size: 40px;
+    font-size: 40px;         
     letter-spacing: 5px;
     cursor: default;
     margin-top: 35px;
@@ -308,11 +270,11 @@ body
 {
     color: #EBAB24;
     
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 #fbContact, #twContact, #igContact, #ytContact, #inContact
@@ -323,12 +285,11 @@ body
     margin-right: 5px;
     /*border: 1px solid red;*/
     
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
- 
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 #fbContact:hover, #twContact:hover, #igContact:hover, #ytContact:hover, #inContact:hover
@@ -340,14 +301,12 @@ body
     -o-transform: scale(1.1);
     transform: scale(1.1);
     
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
-
 /*Changes font size and spacing for browser resize*/
 @media (max-width: 780px)
 {
@@ -432,7 +391,7 @@ body
         line-height: 10px;
     }
     
-    .cohortZoom
+    .zoom
     {
         filter: brightness(100%);
     }

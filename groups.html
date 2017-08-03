@@ -6,15 +6,25 @@
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--Backup Bootstrap CSS for offline development-->
+        <!--
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        -->
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!--Backup JQuery for offline development-->
+        <!--
+        <script src="js/jquery.min.js"></script>
+        -->
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <!--Custom CSS-->
-        <link rel="stylesheet" href="CSS/cohortStyle-min.css">
+        <link rel="stylesheet" href="CSS/groupStyle.css">
         
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -81,7 +91,7 @@
             <!--Header 2-->
             <div class="jumbotron" id="jumboHeader2">
                 <h1>
-                    COHORTS
+                    GROUPS
                 </h1>
                 <div class="barLong"></div>
             </div>
@@ -90,63 +100,97 @@
                 <div class="row">
                     <a href="#" style="text-decoration: none">
                         <div class="col-md-4">
-                            <div class ="cohortZoom" id="cisco">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            <div class="row">
+                                <div class="restrict">
+                                    <div class ="zoom">
+                                        <iframe class="preview" src="https://allstarcodeorg.github.io/" scrolling="no"></iframe>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="groups.html" style="text-decoration: none">
-                        <div class="col-md-4">
-                            <div class ="cohortZoom" id="mlb">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" style="text-decoration: none">
-                        <div class="col-md-4">
-                            <div class ="cohortZoom" id="fb">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="#" style="text-decoration: none">
-                        <div class="col-md-4">
-                            <div class ="cohortZoom" id="yh">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            <div class="row" id="previewLabel">
+                                Group A
                             </div>
                         </div>
                     </a>
                     <a href="#" style="text-decoration: none">
                         <div class="col-md-4">
-                            <div class ="cohortZoom" id="gs">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            <div class="row">
+                                <div class="restrict">
+                                    <div class ="zoom">
+                                        <iframe class="preview" src="https://shaddyjr.github.io/oauthExample/" scrolling="no"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="previewLabel">
+                                Group B
                             </div>
                         </div>
                     </a>
-                    <a href="#" style="text-decoration: none">
+                   <a href="#" style="text-decoration: none">
                         <div class="col-md-4">
-                            <div class ="cohortZoom" id="cu">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            <div class="row">
+                                <div class="restrict">
+                                    <div class ="zoom">
+                                        <iframe class="preview" src="http://www.allstarcode.org/" scrolling="no"></iframe>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="#" style="text-decoration: none">
-                        <div class="col-md-4">
-                            <div class ="cohortZoom" id="bond">
-                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            <div class="row" id="previewLabel">
+                                Group C
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
+            
+            <div class="row">
+               <a href="#" style="text-decoration: none">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="restrict">
+                                <div class ="zoom">
+                                    <iframe class="preview" src="http://www.allstarcode.org/" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="previewLabel">
+                            Group C
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="restrict">
+                                <div class ="zoom">
+                                    <iframe class="preview" src="https://allstarcodeorg.github.io/" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="previewLabel">
+                            Group A
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="restrict">
+                                <div class ="zoom">
+                                    <iframe class="preview" src="https://shaddyjr.github.io/oauthExample/" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="previewLabel">
+                            Group B
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
         
         <div class="jumbotron" id="jumboFooter">
-            <div class="barLong"></div>
+            <div class="barShort"></div>
             <h2>
                 CONTACT
             </h2>
@@ -182,14 +226,14 @@
                 $(window).scroll(
                     function()
                     {
-                    $("h1").css("opacity", 1 - $(window).scrollTop() / 400);
+                    $("h1").css("opacity", 1 - $(window).scrollTop() / 450);
                     }
                 );
 
                 $(window).scroll(
                     function()
                     {
-                    $(".barLong").css("opacity", 1 - $(window).scrollTop() / 450);
+                    $(".barLong").css("opacity", 1 - $(window).scrollTop() / 500);
                     }
                 );
             }
