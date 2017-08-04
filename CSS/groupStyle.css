@@ -353,8 +353,8 @@ body
     
     .barShort, .barLong
     {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     #logo
@@ -376,23 +376,19 @@ body
         height: 150px;
     }
     
-    .headerText h1
-    {
-        font-size: 100px;
-        line-height: 140px;
-    }
-    
     #jumboHeader2
     {
-        padding-top: 0px;
+        padding-top: 5px;
         padding-bottom: 10px;
+        margin-bottom: 10px;
+        
     }
     
     #jumboHeader2 h1
     {
-        padding-top: 50px;
-        padding-bottom: 20px;
-        font-size: 50px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 47px;
         line-height: 10px;
     }
     
