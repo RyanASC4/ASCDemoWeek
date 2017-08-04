@@ -62,7 +62,7 @@ body
 #particles-js
 {
     position: absolute;
-    background-image: url("/assets/HeaderImage1s.png");
+    background-image: url("/assets/HeaderImage1s.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -209,13 +209,10 @@ body
     transition: all 0.3s;
 }
 
-.restrict
-{
-    
-}
-
 .preview
 {
+    background: #3B3D42;
+    width: 100%;
     height: 100%;
     border: none;
     overflow: hidden;
@@ -236,7 +233,7 @@ body
 
 #jumboFooter h2
 {
-    font-size: 40px;         
+    font-size: 40px;
     letter-spacing: 5px;
     cursor: default;
     margin-top: 35px;
@@ -270,11 +267,11 @@ body
 {
     color: #EBAB24;
     
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #fbContact, #twContact, #igContact, #ytContact, #inContact
@@ -285,11 +282,11 @@ body
     margin-right: 5px;
     /*border: 1px solid red;*/
     
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #fbContact:hover, #twContact:hover, #igContact:hover, #ytContact:hover, #inContact:hover
@@ -301,12 +298,14 @@ body
     -o-transform: scale(1.1);
     transform: scale(1.1);
     
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
 }
+
 /*Changes font size and spacing for browser resize*/
 @media (max-width: 780px)
 {
@@ -352,11 +351,17 @@ body
         padding: 12px;
     }
     
+    .barShort, .barLong
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
     #logo
     {
         background-image: url("/assets/AsteriskTrans.png");
-        height: 140%;
-        width: 140%;
+        height: 120%;
+        width: 120%;
     }
     
     #jumboHeader
@@ -405,5 +410,11 @@ body
     #jumboFooter h4
     {
         margin-bottom: 30px;
+    }
+    
+    #fbContact, #twContact, #igContact, #ytContact, #inContact
+    {
+        filter: grayscale(0%);
+
     }
 }

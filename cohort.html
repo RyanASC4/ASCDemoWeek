@@ -5,16 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Bootstrap CSS -->
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        
+        <!--Backup Bootstrap CSS for offline development-->
+        <!--
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        -->
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!--Backup JQuery for offline development-->
+        <!--
+        <script src="js/jquery.min.js"></script>
+        -->
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <!--Custom CSS-->
-        <link rel="stylesheet" href="CSS/cohortStyle-min.css">
+        <link rel="stylesheet" href="CSS/cohortStyle.css">
         
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -141,6 +153,13 @@
                             </div>
                         </div>
                     </a>
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4">
+                            <div class ="cohortZoom" id="jpm">
+                                <img src="/assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -183,13 +202,6 @@
                     function()
                     {
                     $("h1").css("opacity", 1 - $(window).scrollTop() / 400);
-                    }
-                );
-
-                $(window).scroll(
-                    function()
-                    {
-                    $(".barLong").css("opacity", 1 - $(window).scrollTop() / 450);
                     }
                 );
             }

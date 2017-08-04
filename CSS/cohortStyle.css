@@ -62,7 +62,7 @@ body
 #particles-js
 {
     position: absolute;
-    background-image: url("/assets/HeaderImage1s.png");
+    background-image: url("/assets/HeaderImage1s.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -260,6 +260,11 @@ body
     background-image: url("/assets/cohorts/bond.jpg");
 }
 
+#jpm
+{
+    background-image: url("/assets/cohorts/jpm.jpg");
+}
+
 /*Bottom contact info and social section*/
 #jumboFooter
 {
@@ -308,11 +313,11 @@ body
 {
     color: #EBAB24;
     
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #fbContact, #twContact, #igContact, #ytContact, #inContact
@@ -345,7 +350,6 @@ body
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-
 }
 
 /*Changes font size and spacing for browser resize*/
@@ -393,11 +397,17 @@ body
         padding: 12px;
     }
     
+    .barShort, .barLong
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
     #logo
     {
         background-image: url("/assets/AsteriskTrans.png");
-        height: 140%;
-        width: 140%;
+        height: 120%;
+        width: 120%;
     }
     
     #jumboHeader
@@ -420,16 +430,23 @@ body
     
     #jumboHeader2
     {
-        padding-top: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
         padding-bottom: 10px;
     }
     
     #jumboHeader2 h1
     {
-        padding-top: 50px;
-        padding-bottom: 20px;
-        font-size: 50px;
-        line-height: 10px;
+        font-size: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 0;
+    }
+    
+    .container-fluid
+    {
+        padding-top: 10px;
     }
     
     .cohortZoom
@@ -446,5 +463,11 @@ body
     #jumboFooter h4
     {
         margin-bottom: 30px;
+    }
+    
+    #fbContact, #twContact, #igContact, #ytContact, #inContact
+    {
+        filter: grayscale(0%);
+
     }
 }

@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Bootstrap CSS -->
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
         
         <!--Backup Bootstrap CSS for offline development-->
         <!--
@@ -96,15 +98,14 @@
                 <div class="barLong"></div>
             </div>
             <div class="container-fluid">
-                <!--Bootsrap rows and columns for dynamicly resizing year sections, with nested div to tint the sections in accordance to the ASC Branding Guide-->
+               
+                <!--First Row of demos-->
                 <div class="row">
-                    <a href="#" style="text-decoration: none">
+                    <a href="https://allstarcodeorg.github.io/" style="text-decoration: none">
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="restrict">
-                                    <div class ="zoom">
-                                        <iframe class="preview" src="https://allstarcodeorg.github.io/" scrolling="no"></iframe>
-                                    </div>
+                                <div class ="zoom">
+                                    <iframe class="preview" src="https://allstarcodeorg.github.io/" scrolling="no"></iframe>
                                 </div>
                             </div>
                             <div class="row" id="previewLabel">
@@ -112,13 +113,11 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#" style="text-decoration: none">
+                    <a href="https://shaddyjr.github.io/oauthExample/" style="text-decoration: none">
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="restrict">
-                                    <div class ="zoom">
-                                        <iframe class="preview" src="https://shaddyjr.github.io/oauthExample/" scrolling="no"></iframe>
-                                    </div>
+                                <div class ="zoom">
+                                    <iframe class="preview" src="https://shaddyjr.github.io/oauthExample/" scrolling="no"></iframe>
                                 </div>
                             </div>
                             <div class="row" id="previewLabel">
@@ -126,13 +125,11 @@
                             </div>
                         </div>
                     </a>
-                   <a href="#" style="text-decoration: none">
+                   <a href="http://www.allstarcode.org/" style="text-decoration: none">
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="restrict">
-                                    <div class ="zoom">
-                                        <iframe class="preview" src="http://www.allstarcode.org/" scrolling="no"></iframe>
-                                    </div>
+                                <div class ="zoom">
+                                    <iframe class="preview" src="http://www.allstarcode.org/" scrolling="no"></iframe>
                                 </div>
                             </div>
                             <div class="row" id="previewLabel">
@@ -141,56 +138,51 @@
                         </div>
                     </a>
                 </div>
-            </div>
             
-            <div class="row">
-               <a href="#" style="text-decoration: none">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="restrict">
+                <!--Second row of demos-->
+                <div class="row">
+                   <a href="#" style="text-decoration: none">
+                        <div class="col-md-4">
+                            <div class="row">
                                 <div class ="zoom">
                                     <iframe class="preview" src="http://www.allstarcode.org/" scrolling="no"></iframe>
                                 </div>
                             </div>
+                            <div class="row" id="previewLabel">
+                                Group D
+                            </div>
                         </div>
-                        <div class="row" id="previewLabel">
-                            Group C
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="restrict">
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4">
+                            <div class="row">
                                 <div class ="zoom">
                                     <iframe class="preview" src="https://allstarcodeorg.github.io/" scrolling="no"></iframe>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row" id="previewLabel">
-                            Group A
-                        </div>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="restrict">
-                                <div class ="zoom">
-                                    <iframe class="preview" src="https://shaddyjr.github.io/oauthExample/" scrolling="no"></iframe>
-                                </div>
+                            <div class="row" id="previewLabel">
+                                Group E
                             </div>
                         </div>
-                        <div class="row" id="previewLabel">
-                            Group B
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class ="zoom">
+                                    <iframe class="preview" src="http://www.allstarcode.org/curriculum/" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                            <div class="row" id="previewLabel">
+                                Group F
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
         
         <div class="jumbotron" id="jumboFooter">
-            <div class="barShort"></div>
+            <div class="barLong"></div>
             <h2>
                 CONTACT
             </h2>
@@ -227,13 +219,6 @@
                     function()
                     {
                     $("h1").css("opacity", 1 - $(window).scrollTop() / 450);
-                    }
-                );
-
-                $(window).scroll(
-                    function()
-                    {
-                    $(".barLong").css("opacity", 1 - $(window).scrollTop() / 500);
                     }
                 );
             }
